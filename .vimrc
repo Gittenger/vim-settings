@@ -1,5 +1,18 @@
 packloadall
 
+" For loading plugins with vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
+" ulti-snips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsListSnippets="<c-l>"
+
 " color settings
 syntax on
 set t_Co=256
