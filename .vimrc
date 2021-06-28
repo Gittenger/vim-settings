@@ -70,6 +70,7 @@ let g:prettier#config#semi = 'false'
 
 " NERDTree settings
 nmap <Leader>n :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['node_modules$']
 
 set relativenumber
 noremap <Leader>s :update<CR>
